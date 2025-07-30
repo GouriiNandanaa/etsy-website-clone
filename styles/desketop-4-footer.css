@@ -1,0 +1,270 @@
+.footer-copyright * {
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+.footer-copyright {
+    padding: 18px 24px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+.footer-copyright-container {
+    justify-content: center;
+    padding-left: 36px;
+    padding-right: 36px;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 12.99px;
+    line-height: 1.4;
+}
+
+.footer-copyright-each {
+    display: flex;
+    font-family: "graphik-medium";
+}
+
+.footer-copy-left {
+    padding: 9px 0px;
+}
+
+.copy-india-flag-container {
+    vertical-align: middle;
+    top: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.copy-india-flag-container span {
+    position: relative;
+    display: block;
+}
+
+.copy-india-flag-container span svg {
+    height: 20px;
+    width: 20px;
+}
+
+.copy-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12.99px;
+    line-height: 1.4;
+    font-family: "graphik-medium";
+}
+
+/* *8***second section in bottom */
+.footer-copyright-each-2 {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding-bottom: 0;
+}
+
+.copy-right-link-list-item-link:not(:last-child) {
+    margin-left: 36px;
+    margin-right: 18px;
+}
+
+.footer-copy-right-link-list {
+    display: inline-block;
+    padding-left: 0;
+}
+
+.copy-right-link-list-item {
+    margin-right: 18px;
+    display: inline-block;
+}
+
+.copy-right-link-list-item {
+    text-decoration: underline;
+}
+
+.copy-right-link-list-item:last-child {
+    margin-right: 0px;
+}
+
+
+
+/* ************************ second last section */
+
+.footer-links {
+    display: flex;
+    flex-direction: row-reverse;
+    color: #fff;
+    overflow: hidden;
+    background-color: #2638c0;
+}
+
+.footer-links * {
+    color: white;
+}
+
+.fooer-links-nav {
+    padding: 36px 36px 24px;
+    overflow-x: hidden;
+    display: block;
+        flex: 2;
+}
+
+
+.footer-all-links-container {}
+
+.footer-all-links-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-link-item {
+    padding-right: 18px;
+    flex-grow: 1;
+    flex-basis: 25%;
+    max-width: 25%;
+    min-width: 25%;
+    white-space: nowrap;
+    
+}
+
+.footer-link-item:last-child {
+    padding-right: 0;
+}
+
+.footer-link-item-h3 {
+    letter-spacing: .08px;
+    font-family: "graphik-medium";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.footer-link-ul-container {
+    visibility: visible;
+    max-height: none;
+    overflow: visible;
+}
+
+.footer-link-ul {
+    text-align: left !important;
+    padding-right: 6px;
+    width: 100%;
+}
+
+.footer-link-ul-li {
+    width: 100% !important;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.footer-link-ul-li-a {
+    position: relative;
+}
+
+.footer-link-ul-li-a span {
+    font-size: 12.99px;
+}
+
+/* ********* foooter icons */
+
+.width-max {
+    width: 100% !important;
+}
+
+.footer-icon-one {
+    text-align: left !important;
+    margin-top: 12px;
+}
+
+.footer-icon-ul {
+    margin-top: 18px;
+}
+
+.footer-icon-ul-li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.footer-icon-ul-li-a {
+    margin-left: -9px;
+    position: relative;
+}
+
+.footer-icon-ul-li-a::before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.footer-icon-ul-li-a span {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+}
+
+.footer-icon-ul-li-a span svg {
+    height: 24px;
+    width: 24px;
+    fill: white;
+}
+
+
+/* download section */
+
+.download-container {
+    flex-direction: column;
+    gap: 18px;
+    background: #122868;
+    flex: 1;
+    padding: 18px 36px;
+    justify-content: center;
+}
+
+.download-container-a {
+    border-radius: 12px;
+    display: block;
+}
+
+.download-container-a span {
+    height: 72px;
+    width: 72px;
+    background-color: #f1641e;
+    padding: 6px;
+    display: block;
+    border-radius: 12px;
+}
+
+.download-container-a span svg {
+    display: block;
+    width: 60px;
+    height: 60px;
+    fill: white;
+}
+
+.download-text-container {
+    /* width: 35.20859375%; */
+}
+
+.download-text-container a {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 12px 18px;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(38, 56, 192);
+    border-radius: 24px;
+    display: block;
+    font-family: "graphik-medium";
+}
+
+.download-text-container a::before {}
+
+.download-text-container a::after {}

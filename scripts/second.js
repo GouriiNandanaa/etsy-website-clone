@@ -60,7 +60,7 @@ async function liAppending() {
                         ></path>
                         </svg>
                     </span>
-                    <p class="text-title-smaller">${d.review}</p>
+                    <p class="text-title-smaller">(${d.review})</p>
                     </div>
                 </span>
                 <span
