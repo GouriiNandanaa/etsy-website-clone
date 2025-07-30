@@ -43,7 +43,7 @@ async function liAppending() {
                 <div class="rating-whole-flex flex-c">
                 <span class="rating-count-icon-container flex-c">
                     <span class="rating-count text-title-small">
-                    ${d.rating}
+                    ${d.rating.toFixed(1)}
                     </span>
                     <div
                     class="rating-icon-review-container flex-c text-title-small"
@@ -99,14 +99,14 @@ async function liAppending() {
                 <p class="text-title-01 discount-para">
                 <span class="discounted-container">
                     <span class="currency-symbol">₹</span>
-                    <span class="currency-value">${d.discountedPrice}</span>
+                    <span class="currency-value">${d.discountedPrice.toLocaleString()}</span>
                 </span>
                 </p>
                 <p class="original-para">
                 <span class="original-container">
                     <span class="currency-symbol">₹</span>
                     <span class="currency-value"
-                    >${d.originalPrice}</span
+                    >${d.originalPrice.toLocaleString()}</span
                     ></span
                 >
 
