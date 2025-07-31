@@ -1,3 +1,7 @@
+
+filterOverlay.style.display = "none";
+filterLeft.style.display = "none";
+
 const searchBubbles = [
   {
     img: "/assets/images/first-search-bubble/1.jpg",
@@ -48,9 +52,8 @@ const searchBubbles = [
     title: "Finds with Free Delivery",
   },
 ];
-const searchBubbleContainer = document.querySelector(".search-bubble-flex");
 let liString = "";
-searchBubbles.forEach(bubble => {
+searchBubbles.forEach((bubble) => {
   liString += `
     <div class="search-bubble-item">
         <a href="" class="search-bubble-a a-text-caption">
@@ -62,4 +65,3 @@ searchBubbles.forEach(bubble => {
 });
 
 searchBubbleContainer.innerHTML = liString;
-

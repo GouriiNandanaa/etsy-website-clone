@@ -356,7 +356,7 @@
     min-height: 48px;
     min-width: 80px;
     vertical-align: middle;
-    z-index: 1000;
+    z-index: 100;
     border-radius: 24px;
     padding: 12px 18px;
     font-size: 16px;
@@ -365,4 +365,47 @@
     display: inline-block;
     position: relative;
     background-color: #0e0e0e17;
+}
+
+/* ************** special price container */
+.special-price-container {
+    white-space: normal;
+    width: 100%;
+    flex-wrap: wrap;
+    letter-spacing: .08px;
+    font-family: "graphik-medium";
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.special-offers {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    letter-spacing: .08px;
+    font-family: "graphik-medium";
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.special-offers button {
+    text-decoration: underline dashed;
+    background: 0 0;
+    border: 0;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    width: 100%;
+    display: inline-flex !important;
+    color: #595959;
+    letter-spacing: .1299px;
+    font-family: "graphik-regular";
+    font-size: 12.99px;
+    line-height: 1.4;
+    padding: 1px 0px;
+}
+
+.black span {
+    color: #222222;
 }

@@ -13,7 +13,6 @@ async function valueProcessing() {
     const data = await fetchData();
     data.forEach((d) => {
       let origPrice = d.originalPrice.toLocaleString();
-      console.log(origPrice);
     });
   } catch {}
 }

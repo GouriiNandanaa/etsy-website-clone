@@ -1,0 +1,182 @@
+.with-filter-overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.568);
+    opacity: 0.9;
+    z-index: 999;
+}
+
+.filter-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    opacity: 1;
+    padding: 30px;
+    max-width: 580px;
+    width: 580px;
+    background: rgba(255, 255, 255, 1);
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.3)
+}
+
+.filter-cross {
+    opacity: 1;
+    padding: 12px;
+    margin-left: 6px;
+    background: 0 0;
+    border: none;
+    position: absolute;
+    top: 24px;
+    bottom: auto;
+
+    left: 580px;
+    right: auto;
+}
+
+.filter-cross span {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.filter-cross span svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    display: block;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-bottom: 12px;
+}
+
+legend {
+    margin-bottom: 6px;
+    font-family: "graphik-medium";
+    font-size: 14px;
+    line-height: 1.4;
+    display: inline-block;
+    margin-left: -2px;
+}
+
+legend:first-child {
+    padding-top: 1px;
+}
+
+legend h3 {
+    letter-spacing: .1299px;
+    font-family: "graphik-medium";
+    font-size: 12.99px;
+    line-height: 1.4;
+    padding-left: 12px;
+    padding-right: 6px;
+    font-weight: normal;
+}
+
+.check-box-wrapper {
+    padding-left: 12px;
+    margin-bottom: 6px;
+    font-family: "graphik-medium";
+    font-size: 14px;
+    line-height: 1.4;
+
+    /* display: flex;
+    align-items: flex-end; */
+}
+
+.check-box-wrapper:nth-child(1) {
+    margin-bottom: 7px;
+}
+
+.check-box-container {
+    padding-left: 24px;
+    min-height: 18px;
+    position: relative;
+    transform: translateY(-1px);
+    display: flex;
+    align-items: center;
+}
+
+.check-box-a {
+    display: block !important;
+}
+
+.check-box-a input {
+    border-radius: 2px;
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 2px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.check-box-a label {
+    font-size: 12.99px;
+    display: inline !important;
+
+}
+
+.check-box-a label::before {
+    border-radius: 2px;
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    border: 1px solid #949494;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.check-box-a label::after {
+    content: "";
+    left: 3px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M9.17,21.71L0.86,13.4a2,2,0,1,1,2.76-2.76L9,16,20.28,2.93a2,2,0,1,1,2.95,2.56Z'/%3E%3C/svg%3E");
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+/* *****radio********** */
+
+.radio-btn-holder a {
+    position: static;
+    display: block;
+}
+
+.svg-tick-filter {
+    background: rgba(14, 14, 14, 0.09);
+    border: none;
+    padding: 9px;
+    border-radius: 36px;
+
+}
+
+.svg-tick-filter span {
+    height: 18px;
+    width: 18px;
+    display: block;
+}
+
+.svg-tick-filter span svg {
+    height: 18px;
+    width: 18px;
+}

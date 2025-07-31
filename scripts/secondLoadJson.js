@@ -1,6 +1,3 @@
-const personalizedContainer = document.querySelector(".personalised-sale-content-flex");
-console.log(personalizedContainer)
-
 async function fetchData() {
   try {
     const response = await fetch("/data/data.json");
@@ -11,10 +8,54 @@ async function fetchData() {
   }
 }
 
-async function liAppending() {
+async function liAppending(data) {
   let liStringPersonalized = "";
-  const data = await fetchData();
-  data.forEach((d) => {
+  for (let i = 0; i < Math.min(12, data.length); i++) {
+    d = data[i];
+
+    const priceContainerString =
+      d.discountedPrice === null
+        ? ` <div class="special-price-container flex-c">
+            <p class="text-title-01 discount-para black">
+                <span class="discounted-container">
+                <span class="currency-symbol">₹</span>
+                <span class="currency-value">${d.originalPrice.toLocaleString()}</span>
+                </span>
+            </p>
+            <span class="special-offers">
+                <button>
+                Eligible orders get 20% off
+                </button>
+            </span>
+        </div>
+      `
+        : `<div
+                class="price-container-flex flex-c text-title-01"
+            >
+                <p class="text-title-01 discount-para">
+                <span class="discounted-container">
+                    <span class="currency-symbol">₹</span>
+                    <span class="currency-value">${d.discountedPrice.toLocaleString()}</span>
+                </span>
+                </p>
+                <p class="original-para">
+                <span class="original-container">
+                    <span class="currency-symbol">₹</span>
+                    <span class="currency-value"
+                    >${d.originalPrice.toLocaleString()}</span
+                    ></span
+                >
+
+                <span class="wt-text-grey">
+                    <span class="wt-text-grey">(${
+                      100 -
+                      Math.round((d.discountedPrice / d.originalPrice) * 100)
+                    }% off)</span>
+                </span>
+                </p>
+                <p></p>
+            </div>`;
+
     liStringPersonalized += `
     <li class="per-sale-item">
         <div>
@@ -70,7 +111,9 @@ async function liAppending() {
                 <div class="rating-verified-container">
                     <div class="rating-verified-container-flex">
                     <span
-                        class="rating-verified-icon-container"
+                        class="rating-verified-icon-container" style="display:${
+                          d.isVerified ? "block" : "none"
+                        }"
                     >
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -93,29 +136,8 @@ async function liAppending() {
                 </div>
             </div>
 
-            <div
-                class="price-container-flex flex-c text-title-01"
-            >
-                <p class="text-title-01 discount-para">
-                <span class="discounted-container">
-                    <span class="currency-symbol">₹</span>
-                    <span class="currency-value">${d.discountedPrice.toLocaleString()}</span>
-                </span>
-                </p>
-                <p class="original-para">
-                <span class="original-container">
-                    <span class="currency-symbol">₹</span>
-                    <span class="currency-value"
-                    >${d.originalPrice.toLocaleString()}</span
-                    ></span
-                >
+            ${priceContainerString}
 
-                <span class="wt-text-grey">
-                    <span class="wt-text-grey">(25% off)</span>
-                </span>
-                </p>
-                <p></p>
-            </div>
             <div class="extra-margin"></div>
             </div>
         </a>
@@ -123,12 +145,75 @@ async function liAppending() {
         </div>
     </li>
     `;
-  });
-  personalizedContainer.innerHTML= liStringPersonalized;
+  }
+  personalizedContainer.innerHTML = liStringPersonalized;
 }
 
-liAppending();
+let displayData = [];
 
-// liAppending()
-//   .then((data) => console.log(data))
-//   .catch((err) => console.log(err));
+async function fetchAndInit() {
+  displayData = await fetchData();
+  liAppending(displayData);
+  filtering();
+}
+
+let selectedType = "all-type";
+let selectedPrice = "price-input-0";
+
+function applyFilters() {
+  let filteredData = displayData;
+
+  if (selectedType !== "all-type") {
+    filteredData = filteredData.filter((d) => d.type === selectedType);
+  }
+
+  switch (selectedPrice) {
+    case "price-input-1":
+      filteredData = filteredData.filter(
+        (d) => (d.discountedPrice ?? d.originalPrice) <= 25
+      );
+      break;
+    case "price-input-2":
+      filteredData = filteredData.filter(
+        (d) =>
+          (d.discountedPrice ?? d.originalPrice) <= 50 &&
+          (d.discountedPrice ?? d.originalPrice) >= 25
+      );
+      break;
+    case "price-input-3":
+      filteredData = filteredData.filter(
+        (d) =>
+          (d.discountedPrice ?? d.originalPrice) <= 100 &&
+          (d.discountedPrice ?? d.originalPrice) >= 50
+      );
+      break;
+    case "price-input-4":
+      filteredData = filteredData.filter(
+        (d) => (d.discountedPrice ?? d.originalPrice) > 100
+      );
+      break;
+    default:
+      break;
+  }
+
+  liAppending(filteredData);
+}
+
+function filtering() {
+  itemTypeRadio.forEach((item) => {
+    item.addEventListener("change", (e) => {
+      const selectedCategory = e.target.id;
+      console.log(`Selected Category is ${selectedCategory}`);
+
+      if (selectedCategory.includes("price")) {
+        selectedPrice = selectedCategory;
+      } else {
+        selectedType = selectedCategory;
+      }
+
+      applyFilters();
+    });
+  });
+}
+fetchAndInit();
+

@@ -2,11 +2,13 @@
   {
     "title": "First Day of School Sign / Reusable Back to School Sign / Reusable Back to School Photo Prop / Custom Back to School Sign  / Dry Erase",
     "rating": 5.0,
-    "review": "1.4k",
-    "brand": "Nicoleletters",
+    "review": "1.6k",
+    "brand": "NicoleLetters",
     "originalPrice": 3505,
-    "discountedPrice": 2629,
-    "imgLink": "/assets/images/third-personalized-sale/1.webp"
+    "discountedPrice": 5,
+    "imgLink": "/assets/images/third-personalized-sale/1.webp",
+    "isVerified": true,
+    "type" : "vintage"
   },
   {
     "title": "Custom Nylon Backpack with Chenille Letters and Patches / Personalized Backpack for Kids / Back to School Backpack",
@@ -14,8 +16,10 @@
     "review": "29.7k",
     "brand": "LittleEnglandGifts",
     "originalPrice": 2159,
-    "discountedPrice": 1619,
-    "imgLink": "/assets/images/third-personalized-sale/2.avif"
+    "discountedPrice": 45,
+    "imgLink": "/assets/images/third-personalized-sale/2.avif",
+    "isVerified": true,
+    "type" : "normal"
   },
   {
     "title": "Colorful Teacher Name Sign PRINTABLE, Personalized Teacher Gift, Custom Classroom Decor, Teacher Appreciation Gift",
@@ -24,7 +28,9 @@
     "brand": "LoveMoreByElzean",
     "originalPrice": 636,
     "discountedPrice": 446,
-    "imgLink": "/assets/images/third-personalized-sale/3.avif"
+    "imgLink": "/assets/images/third-personalized-sale/3.avif",
+    "isVerified": true,
+    "type" : "vintage"
   },
   {
     "title": "Gift box for young artists set- paint jar holder, personalized name tag, painting supplies for kids, back to school supplies",
@@ -33,34 +39,42 @@
     "brand": "ThreewoodShop",
     "originalPrice": 2755,
     "discountedPrice": 2066,
-    "imgLink": "/assets/images/third-personalized-sale/4.webp"
+    "imgLink": "/assets/images/third-personalized-sale/4.webp",
+    "isVerified": true,
+    "type" : "normal"
   },
   {
     "title": "Custom Name Embroidered Tote Bag / Personalized Teacher Gift / Canvas Tote Bag",
     "rating": 5.0,
-    "review": "300+",
-    "brand": "SoulMadeStitchesa",
+    "review": "300",
+    "brand": "SoulMadeStitches",
     "originalPrice": 2020,
     "discountedPrice": 1762,
-    "imgLink": "/assets/images/third-personalized-sale/5.avif"
+    "imgLink": "/assets/images/third-personalized-sale/5.avif",
+    "isVerified": true,
+    "type" : "vintage"
   },
   {
-    "title": "Custom Book Embosser – 'From the Library Of' Personalized Stamp Embosser",
+    "title": "Custom Book Embosser – \"From The Library Of\" Personalized Stamp Embosser",
     "rating": 4.8,
     "review": "1k",
-    "brand": "NymelaWaxCraft",
+    "brand": "NymaeiaWaxCraft",
     "originalPrice": 3660,
     "discountedPrice": 1944,
-    "imgLink": "/assets/images/third-personalized-sale/6.avif"
+    "imgLink": "/assets/images/third-personalized-sale/6.avif",
+    "isVerified": false,
+    "type" : "vintage"
   },
   {
-    "title": "Custom Teacher Name Notepad, Back to School Teacher Stationery Gift",
+    "title": "Custom Teacher Name Notepad,Back to School Teacher Stationery Gift",
     "rating": 4.7,
     "review": "167",
-    "brand": "TRUshopTreasuree",
+    "brand": "TRUshopTreasures",
     "originalPrice": 1348,
     "discountedPrice": 607,
-    "imgLink": "/assets/images/third-personalized-sale/7.avif"
+    "imgLink": "/assets/images/third-personalized-sale/7.avif",
+    "isVerified": true,
+    "type" : "normal"
   },
   {
     "title": "Personalized custom baby sweaters: hand embroidered baby name gift",
@@ -69,7 +83,9 @@
     "brand": "GinaBabyGiftShop",
     "originalPrice": 5999,
     "discountedPrice": 2580,
-    "imgLink": "/assets/images/third-personalized-sale/8.webp"
+    "imgLink": "/assets/images/third-personalized-sale/8.webp",
+    "isVerified": false,
+    "type" : "normal"
   },
   {
     "title": "Teacher Staff Appreciation Breakfast Flyer Template, Editable Instant Download",
@@ -77,34 +93,42 @@
     "review": "2.5k",
     "brand": "EmmaDoan",
     "originalPrice": 1061,
-    "discountedPrice": 1061,
-    "imgLink": "/assets/images/third-personalized-sale/9.jpg"
+    "discountedPrice": null,
+    "imgLink": "/assets/images/third-personalized-sale/9.jpg",
+    "isVerified": true,
+    "type" : "vintage"
   },
   {
     "title": "Personalized Embroidered Teacher Quarter Zip Sweatshirt",
     "rating": 4.8,
-    "review": "2.7k",
-    "brand": "Floosandfable",
-    "originalPrice": 3546,
+    "review": "7.2k",
+    "brand": "Flossandfable",
+    "originalPrice": 3146,
     "discountedPrice": 2831,
-    "imgLink": "/assets/images/third-personalized-sale/10.jpg"
+    "imgLink": "/assets/images/third-personalized-sale/10.jpg",
+    "isVerified": false,
+    "type" : "vintage"
   },
   {
     "title": "Yoto Card Reader Personalised Display Stand for Cards and Speaker",
     "rating": 4.9,
-    "review": "5k",
+    "review": "9.5k",
     "brand": "MijMojDesign",
     "originalPrice": 5999,
     "discountedPrice": 4799,
-    "imgLink": "/assets/images/third-personalized-sale/11.jpg"
+    "imgLink": "/assets/images/third-personalized-sale/11.jpg",
+    "isVerified": true,
+    "type" : "normal"
   },
   {
     "title": "Yoto Player 3rd Generation Dock with Wireless Charging and Personalization",
     "rating": 4.9,
     "review": "809",
     "brand": "BThorneDesigns",
-    "originalPrice": 4225,
+    "originalPrice": 4224,
     "discountedPrice": 3380,
-    "imgLink": "/assets/images/third-personalized-sale/12.jpg"
+    "imgLink": "/assets/images/third-personalized-sale/12.jpg",
+    "isVerified": true,
+    "type" : "vintage"
   }
 ]
